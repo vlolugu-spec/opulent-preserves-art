@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <section className="py-24 px-6 bg-gradient-vintage relative">
+    <section id="about" className="py-24 px-6 bg-gradient-vintage relative">
       {/* Ornate Border */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-vintage-gold to-transparent"></div>
       

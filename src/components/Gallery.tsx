@@ -120,7 +120,7 @@ export const Gallery = () => {
     : galleryItems.filter(item => item.category === activeCategory);
 
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="collection" className="py-24 px-6 bg-background">
       <div className="container mx-auto max-w-7xl">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">

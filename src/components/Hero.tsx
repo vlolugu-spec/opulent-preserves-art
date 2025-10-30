@@ -35,10 +35,18 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
-            <Button variant="plaque" size="lg">
+            <Button 
+              variant="plaque" 
+              size="lg"
+              onClick={() => document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               View Collection
             </Button>
-            <Button variant="vintage" size="lg">
+            <Button 
+              variant="vintage" 
+              size="lg"
+              onClick={() => document.getElementById('commission')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Commission a Piece
             </Button>
           </div>

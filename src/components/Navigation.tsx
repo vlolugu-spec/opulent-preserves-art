@@ -24,30 +24,30 @@ export const Navigation = () => {
           
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
-            <a 
-              href="#collection" 
+            <button 
+              onClick={() => document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-sm text-foreground hover:text-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display"
             >
               Collection
-            </a>
-            <a 
-              href="#about" 
+            </button>
+            <button 
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-sm text-foreground hover:text-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display"
             >
               About
-            </a>
-            <a 
-              href="#commission" 
+            </button>
+            <button 
+              onClick={() => document.getElementById('commission')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-sm text-foreground hover:text-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display"
             >
               Commission
-            </a>
-            <a 
-              href="#contact" 
+            </button>
+            <button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-sm bg-vintage-gold-muted text-vintage-walnut px-6 py-2 hover:bg-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display font-semibold"
             >
               Inquire
-            </a>
+            </button>
           </div>
           
           {/* Mobile Menu Button */}

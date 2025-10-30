@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const Commission = () => {
   return (
-    <section className="py-32 px-6 bg-gradient-vintage relative overflow-hidden">
+    <section id="commission" className="py-32 px-6 bg-gradient-vintage relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 border border-vintage-gold rounded-full"></div>
