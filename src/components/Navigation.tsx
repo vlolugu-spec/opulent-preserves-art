@@ -15,12 +15,12 @@ export const Navigation = () => {
 
   const handleCategoryClick = (category: CategoryType) => {
     setMobileMenuOpen(false);
-    // Dispatch filter event
+    // Dispatch filter event first
     const event = new CustomEvent('filterCategory', { detail: category });
     window.dispatchEvent(event);
-    // Scroll to collection
+    // Scroll directly to gallery grid, not the filter section
     setTimeout(() => {
-      document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('gallery-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 100);
   };
 
