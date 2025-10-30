@@ -48,12 +48,12 @@ export const FloatingWhatsApp = () => {
           <div className="absolute inset-0 bg-vintage-gold rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300 animate-pulse"></div>
           
           {/* Main Button */}
-          <div className="relative w-16 h-16 bg-gradient-to-br from-vintage-forest to-vintage-forest-dark border-2 border-vintage-gold-muted group-hover:border-vintage-gold rounded-full shadow-ornate group-hover:shadow-glow transition-all duration-300 flex items-center justify-center group-hover:scale-110">
+          <div className="relative w-14 h-14 bg-gradient-to-br from-vintage-forest to-vintage-forest-dark border-2 border-vintage-gold-muted group-hover:border-vintage-gold rounded-full shadow-ornate group-hover:shadow-glow transition-all duration-300 flex items-center justify-center group-hover:scale-110">
             {/* Inner Decorative Ring */}
             <div className="absolute inset-2 border border-vintage-gold/30 rounded-full group-hover:border-vintage-gold/50 transition-colors duration-300"></div>
             
             {/* Icon */}
-            <MessageCircle className="w-7 h-7 text-vintage-gold group-hover:text-vintage-cream transition-colors duration-300 relative z-10" />
+            <MessageCircle className="w-6 h-6 text-vintage-gold group-hover:text-vintage-cream transition-colors duration-300 relative z-10" />
           </div>
 
           {/* Decorative Corner Accents */}
@@ -67,7 +67,7 @@ export const FloatingWhatsApp = () => {
       {/* Call Button */}
       <a
         href={callLink}
-        className="fixed bottom-28 right-8 z-[200] group"
+        className="fixed bottom-[6.5rem] right-8 z-[200] group"
         onMouseEnter={() => setIsCallHovered(true)}
         onMouseLeave={() => setIsCallHovered(false)}
       >
@@ -94,12 +94,12 @@ export const FloatingWhatsApp = () => {
           <div className="absolute inset-0 bg-vintage-gold rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300 animate-pulse"></div>
           
           {/* Main Button */}
-          <div className="relative w-16 h-16 bg-gradient-to-br from-vintage-walnut to-vintage-forest-dark border-2 border-vintage-gold-muted group-hover:border-vintage-gold rounded-full shadow-ornate group-hover:shadow-glow transition-all duration-300 flex items-center justify-center group-hover:scale-110">
+          <div className="relative w-14 h-14 bg-gradient-to-br from-vintage-walnut to-vintage-forest-dark border-2 border-vintage-gold-muted group-hover:border-vintage-gold rounded-full shadow-ornate group-hover:shadow-glow transition-all duration-300 flex items-center justify-center group-hover:scale-110">
             {/* Inner Decorative Ring */}
             <div className="absolute inset-2 border border-vintage-gold/30 rounded-full group-hover:border-vintage-gold/50 transition-colors duration-300"></div>
             
             {/* Icon */}
-            <Phone className="w-7 h-7 text-vintage-gold group-hover:text-vintage-cream transition-colors duration-300 relative z-10" />
+            <Phone className="w-6 h-6 text-vintage-gold group-hover:text-vintage-cream transition-colors duration-300 relative z-10" />
           </div>
 
           {/* Decorative Corner Accents */}
