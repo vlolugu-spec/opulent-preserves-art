@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logoImage from "@/assets/logo-crest.png";
 import { X } from "lucide-react";
+import { CategoryType } from "@/components/FilterBar";
 
 export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,7 +10,18 @@ export const Navigation = () => {
     setMobileMenuOpen(false);
     setTimeout(() => {
       document.getElementById(elementId)?.scrollIntoView({ behavior: 'smooth' });
-    }, 300);
+    }, 100);
+  };
+
+  const handleCategoryClick = (category: CategoryType) => {
+    setMobileMenuOpen(false);
+    // Dispatch filter event
+    const event = new CustomEvent('filterCategory', { detail: category });
+    window.dispatchEvent(event);
+    // Scroll to collection
+    setTimeout(() => {
+      document.getElementById('collection')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
   };
 
   return (
@@ -103,74 +115,37 @@ export const Navigation = () => {
               <div className="pl-4 space-y-2 pb-2 border-l-2 border-vintage-gold/30">
                 <p className="text-xs text-vintage-gold-muted uppercase tracking-wider font-display mb-2">Categories</p>
                 <button 
-                  onClick={() => {
-                    handleNavClick('collection');
-                    // Trigger "Birds" filter after navigation
-                    setTimeout(() => {
-                      const event = new CustomEvent('filterCategory', { detail: 'birds' });
-                      window.dispatchEvent(event);
-                    }, 400);
-                  }}
+                  onClick={() => handleCategoryClick('birds')}
                   className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
                 >
                   Birds
                 </button>
                 <button 
-                  onClick={() => {
-                    handleNavClick('collection');
-                    setTimeout(() => {
-                      const event = new CustomEvent('filterCategory', { detail: 'head-mounts' });
-                      window.dispatchEvent(event);
-                    }, 400);
-                  }}
+                  onClick={() => handleCategoryClick('head-mounts')}
                   className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
                 >
                   Head Mounts
                 </button>
                 <button 
-                  onClick={() => {
-                    handleNavClick('collection');
-                    setTimeout(() => {
-                      const event = new CustomEvent('filterCategory', { detail: 'skins' });
-                      window.dispatchEvent(event);
-                    }, 400);
-                  }}
+                  onClick={() => handleCategoryClick('skins')}
                   className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
                 >
                   Skins
                 </button>
                 <button 
-                  onClick={() => {
-                    handleNavClick('collection');
-                    setTimeout(() => {
-                      const event = new CustomEvent('filterCategory', { detail: 'full-mounts' });
-                      window.dispatchEvent(event);
-                    }, 400);
-                  }}
+                  onClick={() => handleCategoryClick('full-mounts')}
                   className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
                 >
                   Full Mounts
                 </button>
                 <button 
-                  onClick={() => {
-                    handleNavClick('collection');
-                    setTimeout(() => {
-                      const event = new CustomEvent('filterCategory', { detail: 'feet' });
-                      window.dispatchEvent(event);
-                    }, 400);
-                  }}
+                  onClick={() => handleCategoryClick('feet')}
                   className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
                 >
                   Taxidermy Feet
                 </button>
                 <button 
-                  onClick={() => {
-                    handleNavClick('collection');
-                    setTimeout(() => {
-                      const event = new CustomEvent('filterCategory', { detail: 'claws-teeth-horns' });
-                      window.dispatchEvent(event);
-                    }, 400);
-                  }}
+                  onClick={() => handleCategoryClick('claws-teeth-horns')}
                   className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
                 >
                   Claws, Teeth & Horns
