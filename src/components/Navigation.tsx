@@ -79,18 +79,18 @@ export const Navigation = () => {
         <>
           {/* Backdrop */}
           <div 
-            className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 md:hidden"
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[100] md:hidden"
             onClick={() => setMobileMenuOpen(false)}
           />
           
           {/* Menu Drawer */}
-          <div className="fixed top-0 right-0 bottom-0 w-80 bg-card border-l-2 border-vintage-gold-muted shadow-deep z-50 md:hidden animate-slide-in-right">
+          <div className="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-vintage-walnut border-l-2 border-vintage-gold shadow-deep z-[101] md:hidden overflow-y-auto">
             {/* Close Button */}
-            <div className="flex items-center justify-between p-6 border-b border-vintage-gold-muted/30">
+            <div className="flex items-center justify-between p-6 border-b-2 border-vintage-gold/30 bg-gradient-to-b from-vintage-walnut to-vintage-walnut/95">
               <span className="font-display font-bold text-xl text-vintage-cream">Menu</span>
               <button 
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-vintage-gold hover:text-vintage-cream transition-colors duration-300"
+                className="text-vintage-gold hover:text-vintage-cream transition-colors duration-300 p-2"
                 aria-label="Close menu"
               >
                 <X className="w-6 h-6" />
@@ -98,28 +98,28 @@ export const Navigation = () => {
             </div>
             
             {/* Menu Items */}
-            <nav className="p-6 space-y-4">
+            <nav className="p-6 space-y-3">
               <button 
                 onClick={() => handleNavClick('collection')}
-                className="w-full text-left py-3 px-4 text-foreground hover:text-vintage-gold hover:bg-vintage-gold-muted/10 transition-colors duration-300 uppercase tracking-wider font-display border-b border-vintage-gold-muted/20"
+                className="w-full text-left py-4 px-5 text-vintage-cream bg-vintage-forest-dark hover:bg-vintage-forest hover:text-vintage-gold transition-all duration-300 uppercase tracking-wider font-display text-sm border border-vintage-gold-muted/30 shadow-sm"
               >
                 Collection
               </button>
               <button 
                 onClick={() => handleNavClick('about')}
-                className="w-full text-left py-3 px-4 text-foreground hover:text-vintage-gold hover:bg-vintage-gold-muted/10 transition-colors duration-300 uppercase tracking-wider font-display border-b border-vintage-gold-muted/20"
+                className="w-full text-left py-4 px-5 text-vintage-cream bg-vintage-forest-dark hover:bg-vintage-forest hover:text-vintage-gold transition-all duration-300 uppercase tracking-wider font-display text-sm border border-vintage-gold-muted/30 shadow-sm"
               >
                 About
               </button>
               <button 
                 onClick={() => handleNavClick('commission')}
-                className="w-full text-left py-3 px-4 text-foreground hover:text-vintage-gold hover:bg-vintage-gold-muted/10 transition-colors duration-300 uppercase tracking-wider font-display border-b border-vintage-gold-muted/20"
+                className="w-full text-left py-4 px-5 text-vintage-cream bg-vintage-forest-dark hover:bg-vintage-forest hover:text-vintage-gold transition-all duration-300 uppercase tracking-wider font-display text-sm border border-vintage-gold-muted/30 shadow-sm"
               >
                 Commission
               </button>
               <button 
                 onClick={() => handleNavClick('contact')}
-                className="w-full text-left py-3 px-4 bg-vintage-gold-muted text-vintage-walnut hover:bg-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display font-semibold mt-4"
+                className="w-full text-left py-4 px-5 bg-vintage-gold text-vintage-walnut hover:bg-vintage-gold-muted transition-all duration-300 uppercase tracking-wider font-display font-semibold text-sm mt-4 shadow-md border border-vintage-gold"
               >
                 Inquire
               </button>
@@ -127,9 +127,9 @@ export const Navigation = () => {
             
             {/* Decorative Footer */}
             <div className="absolute bottom-8 left-0 right-0 px-6">
-              <div className="text-center space-y-2 border-t border-vintage-gold-muted/30 pt-6">
-                <p className="text-xs text-vintage-gold-muted tracking-[0.2em] uppercase">Est. 1887</p>
-                <p className="text-xs text-muted-foreground">London • New York • Paris</p>
+              <div className="text-center space-y-2 border-t-2 border-vintage-gold/30 pt-6 bg-vintage-walnut/80 pb-4">
+                <p className="text-xs text-vintage-gold tracking-[0.2em] uppercase font-display">Est. 1887</p>
+                <p className="text-xs text-vintage-cream/70">London • New York • Paris</p>
               </div>
             </div>
           </div>
