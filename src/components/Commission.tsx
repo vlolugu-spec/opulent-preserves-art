@@ -21,7 +21,7 @@ export const Commission = () => {
           </div>
           
           <div className="text-center space-y-6">
-            <h2 className="font-display font-bold text-4xl md:text-5xl text-vintage-cream">
+            <h2 className="font-display font-bold text-4xl md:text-5xl text-vintage-cream text-center">
               Commission a Bespoke Piece
             </h2>
             
