@@ -32,7 +32,7 @@ export const Commission = () => {
             </p>
             
             <div className="pt-8 space-y-4">
-              <div className="flex items-center justify-center gap-8 text-sm text-muted-foreground">
+              <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-vintage-gold rounded-full"></div>
                   <span>Museum Quality</span>
@@ -47,13 +47,13 @@ export const Commission = () => {
                 </div>
               </div>
               
-              <div className="pt-6">
+              <div className="pt-6 flex justify-center">
                 <Button variant="plaque" size="lg" className="animate-glow">
                   Request Consultation
                 </Button>
               </div>
               
-              <p className="text-xs text-muted-foreground italic pt-4">
+              <p className="text-xs text-muted-foreground italic pt-4 text-center">
                 Available by appointment only • London & New York
               </p>
             </div>
