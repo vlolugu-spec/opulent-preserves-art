@@ -171,6 +171,17 @@ export const Navigation = () => {
                 Inquire
               </button>
 
+              {/* Scroll to Top */}
+              <button 
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="w-full text-center py-3 px-5 text-vintage-gold-muted hover:text-vintage-gold border border-vintage-gold-muted/30 hover:border-vintage-gold/50 transition-all duration-300 uppercase tracking-wider font-display text-xs mt-4"
+              >
+                ↑ Scroll to Top
+              </button>
+
               {/* Decorative Footer */}
               <div className="text-center space-y-2 border-t-2 border-vintage-gold/30 pt-4 mt-4">
                 <p className="text-xs text-vintage-gold tracking-[0.2em] uppercase font-display">Est. 1887</p>
