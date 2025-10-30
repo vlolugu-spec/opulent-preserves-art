@@ -21,9 +21,10 @@ export const Commission = () => {
           </div>
           
           <div className="text-center space-y-6">
-            <h2 className="font-display font-bold text-4xl md:text-5xl text-vintage-cream text-center">
-              Commission a Bespoke Piece
-            </h2>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-vintage-cream text-center mx-auto max-w-full">
+  Commission a Bespoke Piece
+</h2>
+
             
             <p className="text-lg text-foreground/90 leading-relaxed max-w-2xl mx-auto">
               Our master artisans welcome inquiries for custom taxidermy commissions. 
