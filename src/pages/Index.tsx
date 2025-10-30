@@ -3,11 +3,13 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Gallery } from "@/components/Gallery";
 import { Commission } from "@/components/Commission";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
+      <FloatingWhatsApp />
       <main>
         <Hero />
         <About />
