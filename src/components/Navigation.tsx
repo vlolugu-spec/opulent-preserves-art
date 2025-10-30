@@ -98,6 +98,85 @@ export const Navigation = () => {
               >
                 Collection
               </button>
+              
+              {/* Category Submenu */}
+              <div className="pl-4 space-y-2 pb-2 border-l-2 border-vintage-gold/30">
+                <p className="text-xs text-vintage-gold-muted uppercase tracking-wider font-display mb-2">Categories</p>
+                <button 
+                  onClick={() => {
+                    handleNavClick('collection');
+                    // Trigger "Birds" filter after navigation
+                    setTimeout(() => {
+                      const event = new CustomEvent('filterCategory', { detail: 'birds' });
+                      window.dispatchEvent(event);
+                    }, 400);
+                  }}
+                  className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
+                >
+                  Birds
+                </button>
+                <button 
+                  onClick={() => {
+                    handleNavClick('collection');
+                    setTimeout(() => {
+                      const event = new CustomEvent('filterCategory', { detail: 'head-mounts' });
+                      window.dispatchEvent(event);
+                    }, 400);
+                  }}
+                  className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
+                >
+                  Head Mounts
+                </button>
+                <button 
+                  onClick={() => {
+                    handleNavClick('collection');
+                    setTimeout(() => {
+                      const event = new CustomEvent('filterCategory', { detail: 'skins' });
+                      window.dispatchEvent(event);
+                    }, 400);
+                  }}
+                  className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
+                >
+                  Skins
+                </button>
+                <button 
+                  onClick={() => {
+                    handleNavClick('collection');
+                    setTimeout(() => {
+                      const event = new CustomEvent('filterCategory', { detail: 'full-mounts' });
+                      window.dispatchEvent(event);
+                    }, 400);
+                  }}
+                  className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
+                >
+                  Full Mounts
+                </button>
+                <button 
+                  onClick={() => {
+                    handleNavClick('collection');
+                    setTimeout(() => {
+                      const event = new CustomEvent('filterCategory', { detail: 'feet' });
+                      window.dispatchEvent(event);
+                    }, 400);
+                  }}
+                  className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
+                >
+                  Taxidermy Feet
+                </button>
+                <button 
+                  onClick={() => {
+                    handleNavClick('collection');
+                    setTimeout(() => {
+                      const event = new CustomEvent('filterCategory', { detail: 'claws-teeth-horns' });
+                      window.dispatchEvent(event);
+                    }, 400);
+                  }}
+                  className="w-full text-left py-2 px-3 text-sm text-vintage-cream/90 hover:text-vintage-gold hover:bg-vintage-forest/30 transition-colors duration-200"
+                >
+                  Claws, Teeth & Horns
+                </button>
+              </div>
+              
               <button 
                 onClick={() => handleNavClick('about')}
                 className="w-full text-left py-4 px-5 text-vintage-cream bg-vintage-forest-dark hover:bg-vintage-forest hover:text-vintage-gold transition-all duration-300 uppercase tracking-wider font-display text-sm border border-vintage-gold-muted/30 shadow-sm"

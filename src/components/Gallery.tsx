@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FilterBar, CategoryType } from "@/components/FilterBar";
 import peacockImage from "@/assets/peacock-piece.jpg";
 import owlImage from "@/assets/owl-dome.jpg";
@@ -115,7 +115,20 @@ const galleryItems = [
 export const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState<CategoryType>("all");
 
-  const filteredItems = activeCategory === "all" 
+  // Listen for category filter events from mobile menu
+  useEffect(() => {
+    const handleFilterEvent = (e: CustomEvent) => {
+      setActiveCategory(e.detail as CategoryType);
+    };
+    
+    window.addEventListener('filterCategory' as any, handleFilterEvent as any);
+    
+    return () => {
+      window.removeEventListener('filterCategory' as any, handleFilterEvent as any);
+    };
+  }, []);
+
+  const filteredItems = activeCategory === "all"
     ? galleryItems 
     : galleryItems.filter(item => item.category === activeCategory);
 
