@@ -106,7 +106,7 @@ const galleryItems = [
     id: 6,
     title: "Wild Boar Trophy",
     subtitle: "Sus scrofa",
-    image: boarImage,
+    image: "https://i.pinimg.com/1200x/bf/b0/1a/bfb01aefc26c7986dc40d726d4e958d7.jpg",
     price: "Inquire",
     category: "head-mounts" as CategoryType,
   },
