@@ -66,7 +66,7 @@ const Index = () => {
               </p>
               <div className="text-sm text-muted-foreground space-y-2">
                 <p>Email: inquiries@taxidermygallery.com</p>
-                <p>Tel: +44 20 7123 4567</p>
+                <p>Tel: +44 7436978097</p>
               </div>
               <p className="text-xs text-muted-foreground/60 pt-4">
                 © 1887–2025 Taxidermy Gallery. All specimens ethically sourced and preserved with care.
