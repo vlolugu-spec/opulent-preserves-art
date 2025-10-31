@@ -1,12 +1,15 @@
 import { useCart } from "@/contexts/CartContext";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Minus, Plus, Trash2, X } from "lucide-react";
+import { Minus, Plus, Trash2 } from "lucide-react";
 import { useState } from "react";
+import { CheckoutForm } from "./CheckoutForm";
 
 export const Cart = () => {
   const { items, removeFromCart, updateQuantity, clearCart, totalItems } = useCart();
   const [open, setOpen] = useState(false);
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -110,16 +113,27 @@ export const Cart = () => {
                   className="w-full"
                   onClick={() => {
                     setOpen(false);
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                    setCheckoutOpen(true);
                   }}
                 >
-                  Contact for Inquiry
+                  Proceed to Checkout
                 </Button>
               </div>
             </>
           )}
         </div>
       </SheetContent>
+
+      <Dialog open={checkoutOpen} onOpenChange={setCheckoutOpen}>
+        <DialogContent className="sm:max-w-md bg-background border-2 border-vintage-gold-muted/30">
+          <DialogHeader>
+            <DialogTitle className="font-display text-2xl text-vintage-cream">
+              Complete Your Inquiry
+            </DialogTitle>
+          </DialogHeader>
+          <CheckoutForm onClose={() => setCheckoutOpen(false)} />
+        </DialogContent>
+      </Dialog>
     </Sheet>
   );
 };
