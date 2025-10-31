@@ -98,7 +98,8 @@ const galleryItems = [
     id: 11,
     title: "Eagle Talons Pair",
     subtitle: "Aquila chrysaetos",
-    image: eagleFeetImage,
+    image:
+      "https://media.istockphoto.com/id/1419545982/photo/eagle-claws.jpg?s=612x612&w=0&k=20&c=zZyo5jt-AB_CPakV4TeOJTnyPvTQu6ct2p0tnTsoi-o=",
     price: "Inquire",
     category: "feet" as CategoryType,
   },
