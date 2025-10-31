@@ -90,7 +90,7 @@ const galleryItems = [
     id: 4,
     title: "Bald Eagle in Flight",
     subtitle: "Haliaeetus leucocephalus",
-    image: eagleImage,
+    image: "https://i.pinimg.com/736x/c7/13/b8/c713b8a09bcfe5e5aa09e11adf8b0104.jpg",
     price: "Inquire",
     category: "birds" as CategoryType,
   },
