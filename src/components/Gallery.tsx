@@ -34,7 +34,7 @@ const galleryItems = [
     id: 3,
     title: "Morpho Collection",
     subtitle: "Lepidoptera Display",
-    image: butterfliesImage,
+    image: "https://i.pinimg.com/736x/ac/58/dc/ac58dc396ebd4159499736cb6e25f3e0.jpg",
     price: "Inquire",
     category: "birds" as CategoryType,
   },
