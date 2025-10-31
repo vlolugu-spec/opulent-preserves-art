@@ -107,7 +107,7 @@ const WhatsApp = () => {
             Taxidermy Gallery • Est. 1887
           </p>
           <p className="text-xs text-muted-foreground">
-            London • New York • Paris
+            London • Solihull
           </p>
           <a 
             href="/" 

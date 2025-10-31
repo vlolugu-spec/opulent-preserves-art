@@ -37,7 +37,7 @@ const Index = () => {
             </div>
             
             {/* Location Details */}
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-2xl mx-auto">
               <div className="text-center space-y-3 p-6 border border-vintage-gold-muted/30 bg-card/20">
                 <h3 className="font-display font-semibold text-lg text-vintage-gold">London</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -49,21 +49,11 @@ const Index = () => {
               </div>
               
               <div className="text-center space-y-3 p-6 border border-vintage-gold-muted/30 bg-card/20">
-                <h3 className="font-display font-semibold text-lg text-vintage-gold">New York</h3>
+                <h3 className="font-display font-semibold text-lg text-vintage-gold">Solihull</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  845 Madison Avenue<br />
-                  Upper East Side<br />
-                  NY 10021
-                </p>
-                <p className="text-xs text-vintage-gold-muted">By Appointment Only</p>
-              </div>
-              
-              <div className="text-center space-y-3 p-6 border border-vintage-gold-muted/30 bg-card/20">
-                <h3 className="font-display font-semibold text-lg text-vintage-gold">Paris</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  12 Place Vendôme<br />
-                  1er Arrondissement<br />
-                  75001 Paris
+                  West Midlands<br />
+                  Solihull<br />
+                  United Kingdom
                 </p>
                 <p className="text-xs text-vintage-gold-muted">By Appointment Only</p>
               </div>

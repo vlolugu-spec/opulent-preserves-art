@@ -190,7 +190,7 @@ export const Navigation = () => {
               {/* Decorative Footer */}
               <div className="text-center space-y-2 border-t-2 border-vintage-gold/30 pt-4 mt-4">
                 <p className="text-xs text-vintage-gold tracking-[0.2em] uppercase font-display">Est. 1887</p>
-                <p className="text-xs text-vintage-cream/70">London • New York • Paris</p>
+                <p className="text-xs text-vintage-cream/70">London • Solihull</p>
               </div>
             </nav>
           </div>
