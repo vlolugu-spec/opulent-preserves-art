@@ -2,7 +2,7 @@ import { useCart } from "@/contexts/CartContext";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Minus, Plus, Trash2 } from "lucide-react";
+import { Minus, Plus, Trash2, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import { CheckoutForm } from "./CheckoutForm";
 
@@ -14,15 +14,14 @@ export const Cart = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <button className="relative w-full md:w-auto text-left md:text-center text-sm text-foreground hover:text-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display">
-          <span className="flex items-center justify-between md:justify-center gap-2">
-            <span>Cart</span>
-            {totalItems > 0 && (
-              <span className="bg-vintage-gold text-vintage-walnut text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                {totalItems}
-              </span>
-            )}
-          </span>
+        <button className="relative text-sm text-foreground hover:text-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display flex items-center gap-2">
+          <ShoppingCart className="w-5 h-5" />
+          <span className="hidden md:inline">Cart</span>
+          {totalItems > 0 && (
+            <span className="absolute -top-2 -right-2 bg-vintage-gold text-vintage-walnut text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+              {totalItems}
+            </span>
+          )}
         </button>
       </SheetTrigger>
       <SheetContent className="w-full sm:max-w-lg bg-background border-l-2 border-vintage-gold-muted/30">

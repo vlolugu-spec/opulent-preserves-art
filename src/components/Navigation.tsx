@@ -75,16 +75,19 @@ export const Navigation = () => {
             </button>
           </div>
           
-          {/* Mobile Menu Button */}
-          <button 
-            onClick={() => setMobileMenuOpen((v) => !v)}
-            className="md:hidden text-vintage-gold hover:text-vintage-cream transition-colors duration-300"
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          {/* Mobile Cart & Menu Button */}
+          <div className="md:hidden flex items-center gap-4">
+            <Cart />
+            <button 
+              onClick={() => setMobileMenuOpen((v) => !v)}
+              className="text-vintage-gold hover:text-vintage-cream transition-colors duration-300"
+              aria-label="Toggle menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -166,14 +169,6 @@ export const Navigation = () => {
               >
                 Commission
               </button>
-              
-              {/* Cart Button for Mobile */}
-              <div className="w-full py-4 px-5 bg-vintage-forest-dark hover:bg-vintage-forest border border-vintage-gold-muted/30 shadow-sm">
-                <div onClick={() => setMobileMenuOpen(false)}>
-                  <Cart />
-                </div>
-              </div>
-
               <button 
                 onClick={() => handleNavClick('contact')}
                 className="w-full text-left py-4 px-5 bg-vintage-gold text-vintage-walnut hover:bg-vintage-gold-muted transition-all duration-300 uppercase tracking-wider font-display font-semibold text-sm mt-2 shadow-md border border-vintage-gold"
