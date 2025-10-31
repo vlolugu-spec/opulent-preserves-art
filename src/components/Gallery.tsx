@@ -26,7 +26,7 @@ const galleryItems = [
     id: 2,
     title: "Barn Owl Under Dome",
     subtitle: "Tyto alba",
-    image: owlImage,
+    image: "https://i.pinimg.com/736x/50/fe/2b/50fe2b444a85549331d2843bc6c2d58a.jpg",
     price: "Inquire",
     category: "birds" as CategoryType,
   },
