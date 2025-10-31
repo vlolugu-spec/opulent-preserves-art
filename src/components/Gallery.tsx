@@ -12,6 +12,54 @@ import leopardImage from "@/assets/leopard-full.jpg";
 import eagleFeetImage from "@/assets/eagle-feet.jpg";
 import lionImage from "@/assets/lion-mount.jpg";
 import ravenImage from "@/assets/raven-mount.jpg";
+import hawkImage from "@/assets/hawk-mount.jpg";
+import falconImage from "@/assets/falcon-mount.jpg";
+import pheasantImage from "@/assets/pheasant-mount.jpg";
+import duckImage from "@/assets/duck-mount.jpg";
+import swanImage from "@/assets/swan-mount.jpg";
+import deerMountImage from "@/assets/deer-mount.jpg";
+import mooseMountImage from "@/assets/moose-mount.jpg";
+import buffaloMountImage from "@/assets/buffalo-mount.jpg";
+import ramMountImage from "@/assets/ram-mount.jpg";
+import elkMountImage from "@/assets/elk-mount.jpg";
+import bearHeadMountImage from "@/assets/bear-head-mount.jpg";
+import wolfHeadMountImage from "@/assets/wolf-head-mount.jpg";
+import antelopeMountImage from "@/assets/antelope-mount.jpg";
+import bearSkinImage from "@/assets/bear-skin.jpg";
+import wolfSkinImage from "@/assets/wolf-skin.jpg";
+import zebraSkinImage from "@/assets/zebra-skin.jpg";
+import cheetahSkinImage from "@/assets/cheetah-skin.jpg";
+import jaguarSkinImage from "@/assets/jaguar-skin.jpg";
+import lynxSkinImage from "@/assets/lynx-skin.jpg";
+import coyoteSkinImage from "@/assets/coyote-skin.jpg";
+import cougarSkinImage from "@/assets/cougar-skin.jpg";
+import snowLeopardSkinImage from "@/assets/snow-leopard-skin.jpg";
+import deerFullMountImage from "@/assets/deer-full-mount.jpg";
+import wolfFullMountImage from "@/assets/wolf-full-mount.jpg";
+import bearFullMountImage from "@/assets/bear-full-mount.jpg";
+import bobcatFullMountImage from "@/assets/bobcat-full-mount.jpg";
+import coyoteFullMountImage from "@/assets/coyote-full-mount.jpg";
+import badgerFullMountImage from "@/assets/badger-full-mount.jpg";
+import otterFullMountImage from "@/assets/otter-full-mount.jpg";
+import martenFullMountImage from "@/assets/marten-full-mount.jpg";
+import bearPawsImage from "@/assets/bear-paws.jpg";
+import wolfPawsImage from "@/assets/wolf-paws.jpg";
+import lionPawsImage from "@/assets/lion-paws.jpg";
+import tigerPawsImage from "@/assets/tiger-paws.jpg";
+import leopardPawsImage from "@/assets/leopard-paws.jpg";
+import lynxPawsImage from "@/assets/lynx-paws.jpg";
+import cougarPawsImage from "@/assets/cougar-paws.jpg";
+import bobcatPawsImage from "@/assets/bobcat-paws.jpg";
+import coyotePawsImage from "@/assets/coyote-paws.jpg";
+import bearClawsDisplayImage from "@/assets/bear-claws-display.jpg";
+import ramHornsImage from "@/assets/ram-horns.jpg";
+import deerAntlersImage from "@/assets/deer-antlers.jpg";
+import mooseAntlersImage from "@/assets/moose-antlers.jpg";
+import buffaloHornsImage from "@/assets/buffalo-horns.jpg";
+import elkAntlersImage from "@/assets/elk-antlers.jpg";
+import teethCollectionImage from "@/assets/teeth-collection.jpg";
+import mixedHornsImage from "@/assets/mixed-horns.jpg";
+import fangCollectionImage from "@/assets/fang-collection.jpg";
 
 const galleryItems = [
   {
@@ -108,6 +156,396 @@ const galleryItems = [
     title: "Claws & Teeth Collection",
     subtitle: "Various Specimens",
     image: clawsImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  // Additional Birds
+  {
+    id: 13,
+    title: "Red-tailed Hawk",
+    subtitle: "Buteo jamaicensis",
+    image: hawkImage,
+    price: "Inquire",
+    category: "birds" as CategoryType,
+  },
+  {
+    id: 14,
+    title: "Peregrine Falcon",
+    subtitle: "Falco peregrinus",
+    image: falconImage,
+    price: "Inquire",
+    category: "birds" as CategoryType,
+  },
+  {
+    id: 15,
+    title: "Ring-necked Pheasant",
+    subtitle: "Phasianus colchicus",
+    image: pheasantImage,
+    price: "Inquire",
+    category: "birds" as CategoryType,
+  },
+  {
+    id: 16,
+    title: "Mallard Duck in Flight",
+    subtitle: "Anas platyrhynchos",
+    image: duckImage,
+    price: "Inquire",
+    category: "birds" as CategoryType,
+  },
+  {
+    id: 17,
+    title: "Mute Swan",
+    subtitle: "Cygnus olor",
+    image: swanImage,
+    price: "Inquire",
+    category: "birds" as CategoryType,
+  },
+  // Additional Head Mounts
+  {
+    id: 18,
+    title: "White-tailed Deer Stag",
+    subtitle: "Odocoileus virginianus",
+    image: deerMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  {
+    id: 19,
+    title: "Moose Trophy",
+    subtitle: "Alces alces",
+    image: mooseMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  {
+    id: 20,
+    title: "American Bison",
+    subtitle: "Bison bison",
+    image: buffaloMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  {
+    id: 21,
+    title: "Bighorn Ram",
+    subtitle: "Ovis canadensis",
+    image: ramMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  {
+    id: 22,
+    title: "Bull Elk",
+    subtitle: "Cervus canadensis",
+    image: elkMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  {
+    id: 23,
+    title: "Grizzly Bear",
+    subtitle: "Ursus arctos horribilis",
+    image: bearHeadMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  {
+    id: 24,
+    title: "Gray Wolf",
+    subtitle: "Canis lupus",
+    image: wolfHeadMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  {
+    id: 25,
+    title: "Pronghorn Antelope",
+    subtitle: "Antilocapra americana",
+    image: antelopeMountImage,
+    price: "Inquire",
+    category: "head-mounts" as CategoryType,
+  },
+  // Additional Skins
+  {
+    id: 26,
+    title: "Black Bear Rug",
+    subtitle: "Ursus americanus",
+    image: bearSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 27,
+    title: "Gray Wolf Pelt",
+    subtitle: "Canis lupus",
+    image: wolfSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 28,
+    title: "Zebra Hide",
+    subtitle: "Equus quagga",
+    image: zebraSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 29,
+    title: "Cheetah Skin",
+    subtitle: "Acinonyx jubatus",
+    image: cheetahSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 30,
+    title: "Jaguar Pelt",
+    subtitle: "Panthera onca",
+    image: jaguarSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 31,
+    title: "Canadian Lynx Fur",
+    subtitle: "Lynx canadensis",
+    image: lynxSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 32,
+    title: "Coyote Pelt",
+    subtitle: "Canis latrans",
+    image: coyoteSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 33,
+    title: "Mountain Lion Skin",
+    subtitle: "Puma concolor",
+    image: cougarSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  {
+    id: 34,
+    title: "Snow Leopard Pelt",
+    subtitle: "Panthera uncia",
+    image: snowLeopardSkinImage,
+    price: "Inquire",
+    category: "skins" as CategoryType,
+  },
+  // Additional Full Mounts
+  {
+    id: 35,
+    title: "Deer Standing",
+    subtitle: "Odocoileus virginianus",
+    image: deerFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  {
+    id: 36,
+    title: "Wolf Stalking",
+    subtitle: "Canis lupus",
+    image: wolfFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  {
+    id: 37,
+    title: "Grizzly Bear Upright",
+    subtitle: "Ursus arctos horribilis",
+    image: bearFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  {
+    id: 38,
+    title: "Bobcat Crouching",
+    subtitle: "Lynx rufus",
+    image: bobcatFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  {
+    id: 39,
+    title: "Coyote Alert",
+    subtitle: "Canis latrans",
+    image: coyoteFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  {
+    id: 40,
+    title: "American Badger",
+    subtitle: "Taxidea taxus",
+    image: badgerFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  {
+    id: 41,
+    title: "River Otter",
+    subtitle: "Lontra canadensis",
+    image: otterFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  {
+    id: 42,
+    title: "Pine Marten",
+    subtitle: "Martes martes",
+    image: martenFullMountImage,
+    price: "Inquire",
+    category: "full-mounts" as CategoryType,
+  },
+  // Additional Feet
+  {
+    id: 43,
+    title: "Grizzly Bear Paws",
+    subtitle: "Ursus arctos",
+    image: bearPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 44,
+    title: "Gray Wolf Paws",
+    subtitle: "Canis lupus",
+    image: wolfPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 45,
+    title: "African Lion Paws",
+    subtitle: "Panthera leo",
+    image: lionPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 46,
+    title: "Bengal Tiger Paws",
+    subtitle: "Panthera tigris",
+    image: tigerPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 47,
+    title: "Leopard Paws",
+    subtitle: "Panthera pardus",
+    image: leopardPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 48,
+    title: "Lynx Paws",
+    subtitle: "Lynx canadensis",
+    image: lynxPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 49,
+    title: "Mountain Lion Paws",
+    subtitle: "Puma concolor",
+    image: cougarPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 50,
+    title: "Bobcat Paws",
+    subtitle: "Lynx rufus",
+    image: bobcatPawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  {
+    id: 51,
+    title: "Coyote Paws",
+    subtitle: "Canis latrans",
+    image: coyotePawsImage,
+    price: "Inquire",
+    category: "feet" as CategoryType,
+  },
+  // Additional Claws, Teeth & Horns
+  {
+    id: 52,
+    title: "Grizzly Claws Display",
+    subtitle: "Ursus arctos",
+    image: bearClawsDisplayImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 53,
+    title: "Bighorn Ram Horns",
+    subtitle: "Ovis canadensis",
+    image: ramHornsImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 54,
+    title: "Deer Antler Set",
+    subtitle: "Odocoileus virginianus",
+    image: deerAntlersImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 55,
+    title: "Moose Antlers",
+    subtitle: "Alces alces",
+    image: mooseAntlersImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 56,
+    title: "Buffalo Horns",
+    subtitle: "Syncerus caffer",
+    image: buffaloHornsImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 57,
+    title: "Elk Antler Rack",
+    subtitle: "Cervus canadensis",
+    image: elkAntlersImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 58,
+    title: "Predator Teeth Cabinet",
+    subtitle: "Various Carnivora",
+    image: teethCollectionImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 59,
+    title: "Mixed Horn Display",
+    subtitle: "Various Species",
+    image: mixedHornsImage,
+    price: "Inquire",
+    category: "claws-teeth-horns" as CategoryType,
+  },
+  {
+    id: 60,
+    title: "Carnivore Fang Collection",
+    subtitle: "Various Predators",
+    image: fangCollectionImage,
     price: "Inquire",
     category: "claws-teeth-horns" as CategoryType,
   },
