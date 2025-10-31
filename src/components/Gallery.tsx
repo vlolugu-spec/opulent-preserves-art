@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import { FilterBar, CategoryType } from "@/components/FilterBar";
+import { useCart } from "@/contexts/CartContext";
+import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
+import { ShoppingCart } from "lucide-react";
 import peacockImage from "@/assets/peacock-piece.jpg";
 import owlImage from "@/assets/owl-dome.jpg";
 import butterfliesImage from "@/assets/butterflies.jpg";
@@ -555,6 +559,22 @@ const galleryItems = [
 
 export const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState<CategoryType>("all");
+  const { addToCart } = useCart();
+  const { toast } = useToast();
+
+  const handleAddToCart = (item: typeof galleryItems[0]) => {
+    addToCart({
+      id: item.id,
+      title: item.title,
+      subtitle: item.subtitle,
+      image: item.image,
+      price: item.price,
+    });
+    toast({
+      title: "Added to cart",
+      description: `${item.title} has been added to your cart.`,
+    });
+  };
 
   // Listen for category filter events from mobile menu
   useEffect(() => {
@@ -620,11 +640,17 @@ export const Gallery = () => {
                     {item.title}
                   </h3>
                   <p className="text-xs text-vintage-gold-muted italic tracking-wide">{item.subtitle}</p>
-                  <div className="pt-3 flex items-center justify-between">
+                  <div className="pt-3 flex items-center justify-between gap-2">
                     <span className="text-xs text-muted-foreground uppercase tracking-widest">{item.price}</span>
-                    <button className="text-vintage-gold hover:text-vintage-cream transition-colors duration-300 text-xs uppercase tracking-wider font-display">
-                      Details →
-                    </button>
+                    <Button
+                      variant="plaque"
+                      size="sm"
+                      onClick={() => handleAddToCart(item)}
+                      className="gap-1"
+                    >
+                      <ShoppingCart className="w-3 h-3" />
+                      Add
+                    </Button>
                   </div>
                 </div>
               </div>

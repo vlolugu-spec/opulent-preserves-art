@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import logoImage from "@/assets/logo-crest.png";
 import { X } from "lucide-react";
 import { CategoryType } from "@/components/FilterBar";
+import { Cart } from "@/components/Cart";
 
 export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -65,6 +66,7 @@ export const Navigation = () => {
             >
               Commission
             </button>
+            <Cart />
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-sm bg-vintage-gold-muted text-vintage-walnut px-6 py-2 hover:bg-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display font-semibold"
