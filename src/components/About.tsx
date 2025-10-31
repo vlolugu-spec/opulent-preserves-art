@@ -16,24 +16,36 @@ export const About = () => {
           </div>
           
           <h2 className="font-display font-bold text-5xl md:text-6xl text-vintage-cream">
-            A Legacy of Natural Artistry
+            About Us
           </h2>
           
           <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
             <p>
-              For over a century, Taxidermy Gallery has stood as the premier atelier for collectors 
-              who appreciate the refined intersection of natural history and artistic preservation.
+              Welcome to Taxidermy Gallery, the UK's premier destination for exquisite and ethically 
+              sourced taxidermy. With a passion for preserving the beauty and majesty of the natural world, 
+              we offer a curated collection of high-quality specimens, each a testament to skilled artistry 
+              and respect for wildlife.
             </p>
             
             <p>
-              Our master taxidermists employ techniques passed down through generations, 
-              combining Victorian-era craftsmanship with modern preservation science to create 
-              timeless specimens of unparalleled quality.
+              Based in the heart of the United Kingdom, we pride ourselves on a collection that spans a 
+              diverse range of animals, from stunning birds and majestic mammals to fascinating insects 
+              and marine life. Every piece in our gallery is carefully prepared and presented, ensuring 
+              both aesthetic appeal and longevity.
             </p>
             
-            <p className="text-vintage-gold-muted italic">
-              "Each piece tells a story—not of endings, but of eternal beauty, 
-              frozen in a moment of natural grace."
+            <p>
+              At Taxidermy Gallery, we understand the importance of responsible sourcing. We are committed 
+              to ethical practices, working only with reputable suppliers and adhering strictly to all 
+              national and international wildlife regulations. Our aim is to provide pieces that not only 
+              captivate but also come with a clear, ethical provenance.
+            </p>
+
+            <p>
+              We are delighted to serve enthusiasts, collectors, and interior designers across the globe. 
+              We offer reliable and secure delivery services, ensuring that your chosen piece arrives safely 
+              at your doorstep, no matter where you are. Explore our collection and bring a touch of timeless 
+              nature into your home or space with Taxidermy Gallery.
             </p>
           </div>
           
