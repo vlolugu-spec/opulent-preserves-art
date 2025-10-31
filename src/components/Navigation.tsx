@@ -166,6 +166,14 @@ export const Navigation = () => {
               >
                 Commission
               </button>
+              
+              {/* Cart Button for Mobile */}
+              <div className="w-full py-4 px-5 bg-vintage-forest-dark hover:bg-vintage-forest border border-vintage-gold-muted/30 shadow-sm">
+                <div onClick={() => setMobileMenuOpen(false)}>
+                  <Cart />
+                </div>
+              </div>
+
               <button 
                 onClick={() => handleNavClick('contact')}
                 className="w-full text-left py-4 px-5 bg-vintage-gold text-vintage-walnut hover:bg-vintage-gold-muted transition-all duration-300 uppercase tracking-wider font-display font-semibold text-sm mt-2 shadow-md border border-vintage-gold"

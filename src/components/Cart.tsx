@@ -14,13 +14,15 @@ export const Cart = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <button className="relative text-sm text-foreground hover:text-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display">
-          Cart
-          {totalItems > 0 && (
-            <span className="absolute -top-2 -right-2 bg-vintage-gold text-vintage-walnut text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-              {totalItems}
-            </span>
-          )}
+        <button className="relative w-full md:w-auto text-left md:text-center text-sm text-foreground hover:text-vintage-gold transition-colors duration-300 uppercase tracking-wider font-display">
+          <span className="flex items-center justify-between md:justify-center gap-2">
+            <span>Cart</span>
+            {totalItems > 0 && (
+              <span className="bg-vintage-gold text-vintage-walnut text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                {totalItems}
+              </span>
+            )}
+          </span>
         </button>
       </SheetTrigger>
       <SheetContent className="w-full sm:max-w-lg bg-background border-l-2 border-vintage-gold-muted/30">
