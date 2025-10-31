@@ -32,12 +32,12 @@ export const Navigation = () => {
           <a href="/" className="flex items-center gap-3 group">
             <img 
               src={logoImage} 
-              alt="Atelier Memento Crest" 
+              alt="Taxidermy Gallery Crest" 
               className="w-12 h-12 transition-transform duration-500 group-hover:scale-110"
             />
             <div className="flex flex-col">
               <span className="font-display font-bold text-xl text-vintage-cream group-hover:text-vintage-gold transition-colors duration-300">
-                Atelier Memento
+                Taxidermy Gallery
               </span>
               <span className="text-xs text-vintage-gold-muted tracking-[0.2em] uppercase">
                 Est. 1887

@@ -26,7 +26,7 @@ const WhatsApp = () => {
         <div className="flex justify-center mb-8 animate-fade-in">
           <img 
             src={logoImage} 
-            alt="Atelier Memento Crest" 
+            alt="Taxidermy Gallery Crest" 
             className="w-24 h-24 drop-shadow-glow animate-float"
           />
         </div>
@@ -104,7 +104,7 @@ const WhatsApp = () => {
         {/* Footer Note */}
         <div className="text-center mt-8 space-y-2">
           <p className="text-xs text-vintage-gold-muted tracking-[0.2em] uppercase font-display">
-            Atelier Memento • Est. 1887
+            Taxidermy Gallery • Est. 1887
           </p>
           <p className="text-xs text-muted-foreground">
             London • New York • Paris

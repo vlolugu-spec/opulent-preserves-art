@@ -23,7 +23,7 @@ export const Hero = () => {
           </div>
           
           <h1 className="font-display font-bold text-6xl md:text-7xl lg:text-8xl leading-tight">
-            Atelier <span className="text-vintage-gold">Memento</span>
+            Taxidermy <span className="text-vintage-gold">Gallery</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-vintage-cream/80 font-serif max-w-2xl mx-auto leading-relaxed">

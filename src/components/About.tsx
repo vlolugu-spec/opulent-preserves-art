@@ -21,7 +21,7 @@ export const About = () => {
           
           <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
             <p>
-              For over a century, Atelier Memento has stood as the premier atelier for collectors 
+              For over a century, Taxidermy Gallery has stood as the premier atelier for collectors 
               who appreciate the refined intersection of natural history and artistic preservation.
             </p>
             

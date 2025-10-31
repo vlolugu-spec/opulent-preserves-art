@@ -72,14 +72,14 @@ const Index = () => {
             {/* Contact Info */}
             <div className="text-center space-y-4 border-t border-vintage-gold-muted/30 pt-8">
               <p className="font-display text-vintage-gold text-sm tracking-[0.3em] uppercase">
-                Atelier Memento
+                Taxidermy Gallery
               </p>
               <div className="text-sm text-muted-foreground space-y-2">
-                <p>Email: inquiries@ateliermemento.com</p>
+                <p>Email: inquiries@taxidermygallery.com</p>
                 <p>Tel: +44 20 7123 4567</p>
               </div>
               <p className="text-xs text-muted-foreground/60 pt-4">
-                © 1887–2025 Atelier Memento. All specimens ethically sourced and preserved with care.
+                © 1887–2025 Taxidermy Gallery. All specimens ethically sourced and preserved with care.
               </p>
             </div>
           </div>
