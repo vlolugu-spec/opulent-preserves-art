@@ -6,12 +6,12 @@ export const FloatingWhatsApp = () => {
   const [isCallHovered, setIsCallHovered] = useState(false);
   
   // Replace with your actual WhatsApp number
-  const whatsappNumber = "447123456789";
+  const whatsappNumber = "447436978097";
   const whatsappMessage = encodeURIComponent("Hello, I'm interested in your exquisite taxidermy collection.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   
   // Replace with your actual phone number
-  const phoneNumber = "+442071234567"; // Format: +44 20 7123 4567
+  const phoneNumber = "+447436978097";
   const callLink = `tel:${phoneNumber}`;
 
   return (

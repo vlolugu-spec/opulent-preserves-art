@@ -4,7 +4,7 @@ import logoImage from "@/assets/logo-crest.png";
 
 const WhatsApp = () => {
   // Replace with your actual WhatsApp number (international format without + or spaces)
-  const whatsappNumber = "447123456789"; // Example: UK number
+  const whatsappNumber = "447436978097";
   const whatsappMessage = encodeURIComponent("Hello, I'm interested in your exquisite taxidermy collection.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 

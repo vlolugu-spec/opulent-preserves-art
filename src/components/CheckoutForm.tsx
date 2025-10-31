@@ -78,7 +78,7 @@ export const CheckoutForm = ({ onClose }: CheckoutFormProps) => {
       );
 
       // Open WhatsApp
-      window.open(`https://wa.me/?text=${whatsappMessage}`, "_blank");
+      window.open(`https://wa.me/447436978097?text=${whatsappMessage}`, "_blank");
 
       toast({
         title: "Inquiry sent!",
